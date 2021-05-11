@@ -1,0 +1,43 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: black;
+}
+
+.imagemFundo{
+    width: 1349px;
+    height: 500px;
+
+}
+
+.menu{
+margin-bottom: 500px;
+}
+
+li{ 
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.infoArtes{
+    background-color: rgba(236, 236, 234, 0.116);
+    border-radius: 15px;
+    margin: auto auto;
+    max-width: 60%;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    
+    
+}
