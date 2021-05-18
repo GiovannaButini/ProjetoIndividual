@@ -7,6 +7,7 @@
         max-width: 100%;
         max-height: 100%;
         background-color: black;
+        overflow: hidden;
     }
     
 .imagemFundo{
@@ -45,7 +46,7 @@
         transform: translateX(200px); /*mexer na horizontal*/
     }
 
-    a:hover{
+    nav ul li a:hover{
         background-color: rgb(176, 224, 230);
         color: black;
     }
@@ -96,6 +97,7 @@
     h2 a:hover{
         background-color: rgb(176, 224, 230);
         color: black;
+        z-index: 1;
         top: 0px;
     }
     
@@ -143,7 +145,7 @@
         width: 250px;
         height: 200px;
         top: -470px;
-        margin-left: 860px;
+        margin-left: 950px;
         position: relative;
         opacity: 10%; 
     }
@@ -160,13 +162,51 @@
     .manchaVerde{
         width: 200px;
         height: 200px;
-        top: -900px;
+        top: -1040px;
         margin-left: 450px;
         position: relative;
         opacity: 10%;
+        z-index: 0;
     }
+
+    .manchaLaranja{
+        width: 200px;
+        height: 200px;
+        top: -870px;
+        margin-left: -500px;
+        position: relative;
+        opacity: 5%;
+    }
+
     .h1{
         margin-top: 50px;
+    }
+
+    .cadastrar{
+        border: none;
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+        background-color: rgb(255, 0, 0);
+        margin-left: 1230px;
+        position: absolute;
+        z-index: 1;
+        margin-top: 10px;
+    }
+    
+    .divFilhaCadastrar{
+        margin-top: -34px;
+        margin-left: -45px;
+    }
+    
+    .divFilhaCadastrar a{
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        position: relative;
+        top: 19px;
+        margin-left: 30px;
+        cursor: pointer;
+        color: white;
     }
     
     

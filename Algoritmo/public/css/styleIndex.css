@@ -63,14 +63,14 @@ input[type="checkbox"]:checked ~ nav{  /*toda vez que o input for acionado, vai 
 
 nav{
     background-color: rgba(77, 76, 76, 0.904);
-    width: 180px;
+    width: 177px;
     height: 64.7%;
     left: -200px; /*esconde o menu*/
     position:absolute; /*pai do ul*/
     transition: all .5s; /*transição em tudo*/
 }
 
-a:hover{
+nav ul li a:hover{
     background-color: rgb(176, 224, 230);
     color: black;
 }
@@ -91,6 +91,11 @@ h2 a{
     text-align: center;
     color: rgba(248, 220, 62, 0.726);
     font-family: 'Raleway', sans-serif;
+}
+
+h2 a:hover{
+    background-color: rgb(176, 224, 230);
+    color: black; 
 }
 
 .imagens{
@@ -164,4 +169,22 @@ h2 a{
     position: relative;
     opacity: 10%;
 }
+
+.cadastrar{
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    margin-left: 1230px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.divFilhaCadastrar{
+    margin-top: -14px;
+    margin-left: -14px;
+}
+
 

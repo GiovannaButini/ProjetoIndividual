@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="styleCadastro.css">
+    <link rel="stylesheet" href="./css/styleCadastro.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -24,15 +24,33 @@
                     <li><a href=""><i class="fas fa-user"></i> PERFIL</a></li>
                     <li><a href="sobre.html"><i class="fas fa-address-card"></i> SOBRE</a></li>
                     <li><a href="contato.html"><i class="fas fa-address-book"></i> FALE CONOSCO</a></li>
-                    <li><a href=""><i class="fas fa-sign-in-alt"></i> LOGIN</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></li>
                 </ul>
             </nav>
         </div>
     </div>
+
+    <h1 style="text-align: center; color: rgba(248, 220, 62, 0.726);">CADASTRE-SE <span style="color: red;">AQUI</span>!</h1>
 </head>
 
 </head>
 <body>
+
+    <div class="picture">
+        <img src="./img/ARARA.png">
+    </div>
+
+    <div class="cadastro">
+    <span class="nome">Nome:</span><br><input id="nomeCadastro">
+    <br>
+    <span class="email">E-mail:</span><br><input id="emailCadastro">
+    <br>
+    <span class="senha">Senha:</span><br> <input id="senhaCadastro">
+    <br>
+    <span class="telefone">Telefone:</span><br><input id="telefoneCadastro">
+    <br>
+    <button onclick="cadastrar()"><a href="login.html">Cadastrar</a></button>
+    </div>
     
 </body>
 </html>
