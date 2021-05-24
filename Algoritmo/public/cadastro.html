@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    
 
     <!--MENU-->
     <div id="divPaiMenu">
@@ -30,27 +32,50 @@
         </div>
     </div>
 
-    <h1 style="text-align: center; color: rgba(248, 220, 62, 0.726);">CADASTRE-SE <span style="color: red;">AQUI</span>!</h1>
+    <h1 style="text-align: center; color: rgba(248, 220, 62, 0.726);">CADASTRE-SE <span style="color: red;">AQUI</span>!
+    </h1>
 </head>
 
 </head>
+
 <body>
 
     <div class="picture">
         <img src="./img/ARARA.png">
     </div>
 
-    <div class="cadastro">
-    <span class="nome">Nome:</span><br><input id="nomeCadastro">
-    <br>
-    <span class="email">E-mail:</span><br><input id="emailCadastro">
-    <br>
-    <span class="senha">Senha:</span><br> <input id="senhaCadastro">
-    <br>
-    <span class="telefone">Telefone:</span><br><input id="telefoneCadastro">
-    <br>
-    <button onclick="cadastrar()"><a href="login.html">Cadastrar</a></button>
+    <div name="formularioCadastro" id="form" class="cadastro" method="post">
+        <span class="nome">Nome:</span><br><input name="nomeUser" id="nomeCadastro" placeholder="Nome e sobrenome" required minlength="5">
+        <br>
+        <span class="email">E-mail:</span><br><input name="emailUser" id="emailCadastro" placeholder="Seu e-mail" required minlength="5" type="email">
+        <br>
+        <span class="senha">Senha:</span><br> <input name="senhaUser" id="senhaCadastro" placeholder="Insira uma senha criativa" required minlength="8" type="password">
+        <br>
+        <span class="telefone">Telefone:</span><br><input name="tefeloneUser" id="telefoneCadastro" placeholder="Seu telefone/celular"
+        minlength="9">
+        <br>
+        <input type="submit" id="button" onclick="return validar()">
+        <br>
+        <span id="mensagem"></span>
     </div>
-    
+
+    <!--required - faz com que o campo seja obrigatório-->
+
 </body>
+
 </html>
+
+<script>
+
+    function validar(){
+        if(emailCadastro.value.indexOf('@') >=0){
+            cadastrar()
+        }
+    }
+
+    function cadastrar() {
+        if (nomeCadastro.value != "" && emailCadastro.value != "" && senhaCadastro.value != "" && telefoneCadastro.value != ""){
+         window.location.href="login.html";
+        }
+    }
+</script>

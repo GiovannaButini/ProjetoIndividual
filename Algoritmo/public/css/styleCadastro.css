@@ -82,7 +82,12 @@
         font-family: 'Raleway', sans-serif;
         padding: 7px;
         top: 80px;
+        font-weight: bolder;
 
+    }
+
+    #nomeCadastro{
+        background-color: rgba(236, 236, 234, 0.116); 
     }
 
     #emailCadastro{
@@ -137,7 +142,7 @@
 }
     
 
-.cadastro button{
+#button{
     width: 100px;
     height: 40px;
     border-radius: 20px;
@@ -149,6 +154,7 @@
     position: relative;
     top: 190px;
     margin-left: 885px;
+    font-weight:bolder;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -183,6 +189,9 @@
         position: fixed absolute;
     }
 }
+
+
+
 
 
 
