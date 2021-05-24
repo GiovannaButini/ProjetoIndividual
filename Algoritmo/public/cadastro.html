@@ -44,20 +44,24 @@
         <img src="./img/ARARA.png">
     </div>
 
-    <div name="formularioCadastro" id="form" class="cadastro" method="post">
-        <span class="nome">Nome:</span><br><input name="nomeUser" id="nomeCadastro" placeholder="Nome e sobrenome" required minlength="5">
+    <form name="formularioCadastro" id="form" class="cadastro" method="post" onsubmit="return validar()">
+        <span class="nome">Nome:</span><br>
+        <input name="nomeUser" id="nomeCadastro" placeholder="Nome e sobrenome" required minlength="5">
         <br>
-        <span class="email">E-mail:</span><br><input name="emailUser" id="emailCadastro" placeholder="Seu e-mail" required minlength="5" type="email">
+        <span class="email">E-mail:</span><br>
+        <input name="emailUser" id="emailCadastro" placeholder="Seu e-mail" required minlength="5" type="email">
         <br>
-        <span class="senha">Senha:</span><br> <input name="senhaUser" id="senhaCadastro" placeholder="Insira uma senha criativa" required minlength="8" type="password">
+        <span class="senha">Senha:</span><br> 
+        <input name="senhaUser" id="senhaCadastro" placeholder="Insira uma senha criativa" required minlength="8" type="password">
         <br>
-        <span class="telefone">Telefone:</span><br><input name="tefeloneUser" id="telefoneCadastro" placeholder="Seu telefone/celular"
+        <span class="telefone">Telefone:</span><br>
+        <input name="tefeloneUser" id="telefoneCadastro" placeholder="Seu telefone/celular"
         minlength="9">
         <br>
-        <input type="submit" id="button" onclick="return validar()">
+        <input type="submit" id="button">
         <br>
         <span id="mensagem"></span>
-    </div>
+    </form>
 
     <!--required - faz com que o campo seja obrigatório-->
 
@@ -68,14 +72,11 @@
 <script>
 
     function validar(){
-        if(emailCadastro.value.indexOf('@') >=0){
-            cadastrar()
+        if(emailCadastro.value.indexOf('@') >=0 && nomeCadastro.value != "" && emailCadastro.value != "" && 
+        senhaCadastro.value != "" && telefoneCadastro.value != ""){
+            window.location.href='login.html';
         }
-    }
 
-    function cadastrar() {
-        if (nomeCadastro.value != "" && emailCadastro.value != "" && senhaCadastro.value != "" && telefoneCadastro.value != ""){
-         window.location.href="login.html";
-        }
+        return false;
     }
 </script>
