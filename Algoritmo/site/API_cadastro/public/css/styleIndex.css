@@ -1,0 +1,190 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: black;
+}
+
+.imagemFundo{
+    width: 1345px;
+    height: 380px;
+    margin-left: 3px;
+}
+
+.infoArtes{
+    background-color: rgba(236, 236, 234, 0.116);
+    border-radius: 15px;
+    margin-left: 43px;
+    margin-bottom: 20px;
+    max-width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.801);   
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    z-index: 1;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: block; /*Ocupa 100% do pai*/
+    padding: 20px 20px 30px 30px; /*em cima, embaixo, esquerda, direita*/
+    font-family: 'Raleway', sans-serif;
+
+}
+
+ul{
+    list-style: none;
+    top: 50px;
+    position: absolute;
+    width: 100%;
+}
+
+label img{
+    width: 40px;
+    height: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav{  /*toda vez que o input for acionado, vai fazer um evento no elemento nav
+    ou seja, irá reaparecer*/
+    transform: translateX(200px); /*mexer na horizontal*/
+}
+
+nav{
+    background-color: rgba(77, 76, 76, 0.904);
+    width: 177px;
+    height: 64.5%;
+    left: -200px; /*esconde o menu*/
+    position:absolute; /*pai do ul*/
+    transition: all .5s; /*transição em tudo*/
+}
+
+nav ul li a:hover{
+    background-color: rgb(176, 224, 230);
+    color: black;
+}
+
+label{
+    position: absolute;
+    z-index: 1; /*sobrepos o menu*/
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.fas{
+    margin-left: -15px;
+    color: black;
+}
+
+h2 a{
+    text-align: center;
+    color: rgba(248, 220, 62, 0.726);
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 a:hover{
+    background-color: rgb(176, 224, 230);
+    color: black; 
+}
+
+.imagens{
+    position: relative;
+}
+
+.divFilhaimagens{
+    position: absolute;
+}
+
+.manchaVerm{
+    width: 200px;
+    height: 200px;
+    margin-top: -10px;
+    position: relative;
+    opacity: 10%;
+}
+
+.manchaAzul{
+    width: 250px;
+    height: 200px;
+    margin-top: -10px;
+    margin-left: 800px;
+    position: relative;
+    opacity: 10%;
+    
+}
+
+.manchaRoxo{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 800px;
+    position: relative;
+    opacity: 10%;
+}
+
+.manchaAmar{
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    margin-right: 200px;
+    margin-left: 20px;
+    position: relative;
+    opacity: 7%;
+}
+
+.manchaVerde{
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+    opacity: 10%;
+}
+
+.manchaMarrom{
+    width: 200px;
+    height: 200px;
+    top: -300px;
+    margin-left: -700px;
+    position: relative;
+    opacity: 10%;
+}
+
+.manchaColorida{
+    width: 200px;
+    height: 200px;
+    bottom: -69px;
+    margin-left: 800px;
+    position: relative;
+    opacity: 10%;
+}
+
+.cadastrar{
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    margin-left: 1230px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.divFilhaCadastrar{
+    margin-top: -14px;
+    margin-left: -14px;
+}
+
+
