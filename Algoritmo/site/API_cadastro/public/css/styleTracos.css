@@ -1,0 +1,17 @@
+.titleTracos{
+    background-color:  rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    top: 10px;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    left: 520px;
+
+}
+
+.gifLacos{
+    left: 30px;
+}

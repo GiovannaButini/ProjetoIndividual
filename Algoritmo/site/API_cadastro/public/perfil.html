@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="./css/stylePerfil.css">
-    <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -18,33 +17,36 @@
             <input type="checkbox" id="chk">
             <label for="chk">
                 <!--for ligará o label com o input, assim, quando clicar na imagem, acionará o checkbox-->
-                <img src="https://www.materialui.co/materialIcons/navigation/menu_grey_192x192.png" alt="">
+                <img src="https://www.indiawoodcrafts.com/img/menuIcon.png" alt="">
             </label>
+            
             <nav>
                 <ul>
                     <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
-                    <li><a href="perfil.html"><i class="fas fa-user"></i> PERFIL</a></li>
+                    <li><a href="perfil.html"><i class="far fa-chart-bar"></i> MÉTRICAS</a></li>
                     <li><a href="sobre.html"><i class="fas fa-address-card"></i> SOBRE</a></li>
                     <li><a href="contato.html"><i class="fas fa-address-book"></i> FALE CONOSCO</a></li>
-                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></li>
+                    <li><a href="#" class="highlight" onclick="logoff()"><i class="fas fa-sign-in-alt"></i> LOGOUT</a></li>
                 </ul>
             </nav>
         </div>
     </div>
+
 </head>
 
-<span class="nomeUsuario">Olá, </span>
-<div class="metricas">
-    <div class="divFilhaMetricas">
-        <a href=""><b>Métricas</b></a>
-</div>
-</div>
-<br>
-<br>
-<span class="mensagemParaUsuario">Bora aprender?</span>
+</head>
 
 <body>
-    <div class="content"><a href="">
+
+    <figure class="gif">
+        <!--IMAGEM DE FUNDO-->
+        <img src="https://i.pinimg.com/originals/71/da/80/71da809d829db81469e35f234b03d70e.gif" alt="" class="gif">
+    </figure>
+
+    <h1 class="nomeUsuario">Olá, <b id="b_usuario"></b></h3>
+    </h1>
+
+    <div class="content"><a href="cores.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title">Cores</h2>
@@ -60,7 +62,7 @@
             </div>
         </a></div>
 
-        <div class="content-2"><a href="">
+    <div class="content-2"><a href="tracos.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title-2">Traços</h2>
@@ -68,8 +70,8 @@
                 </div>
                 <div class="mediaCard">
                     <br>
-                    <img src="https://ingleseportugues.com.br/wp-content/uploads/2018/05/pen-27043_640.png" height="130px"
-                        width="150px">
+                    <img src="https://ingleseportugues.com.br/wp-content/uploads/2018/05/pen-27043_640.png"
+                        height="130px" width="150px">
                 </div>
                 <div class="bottomCard">
                     <p class="text_bottom">Dicas importantes para traços atraentes e precisos</p>
@@ -77,15 +79,15 @@
             </div>
         </a></div>
 
-        <div class="content-3"><a href="">
+    <div class="content-3"><a href="pintura.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title-3">Pintura</h2>
                     <span class="text_top">Princípios de pinturas</span>
                 </div>
                 <div class="mediaCard-3">
-                    <img src="https://i.pinimg.com/originals/a5/04/f4/a504f4ed3f735c48eada06de0583074b.png" height="130px"
-                        width="150px">
+                    <img src="https://i.pinimg.com/originals/a5/04/f4/a504f4ed3f735c48eada06de0583074b.png"
+                        height="130px" width="150px">
                 </div>
                 <div class="bottomCard">
                     <p class="text_bottom-3">Dicas importantes para pintar de forma mais harmônica</p>
@@ -93,15 +95,15 @@
             </div>
         </a></div>
 
-        <div class="content-4"><a href="">
+    <div class="content-4"><a href="caricatura.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title-4">Caricatura</h2>
                     <span class="text_top">Princípios de caricaturas</span>
                 </div>
                 <div class="mediaCard-4">
-                    <img src="https://i.pinimg.com/originals/50/d7/cf/50d7cf16ecd8209fe913d3cbf874a510.png" height="130px"
-                        width="150px">
+                    <img src="https://i.pinimg.com/originals/50/d7/cf/50d7cf16ecd8209fe913d3cbf874a510.png"
+                        height="130px" width="150px">
                 </div>
                 <div class="bottomCard">
                     <p class="text_bottom-4">Dicas importantes para fazer um bom estilo caricaturístico</p>
@@ -109,16 +111,16 @@
             </div>
         </a></div>
 
-        
-        <div class="content-5"><a href="">
+
+    <div class="content-5"><a href="quadrinhos.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title-5">Quadrinhos</h2>
                     <span class="text_top">Princípios de quadrinhos</span>
                 </div>
                 <div class="mediaCard-5">
-                    <img src="https://static.wikia.nocookie.net/dublagempedia/images/c/c4/Hqdefault_%283%29.png/revision/latest?cb=20200329170643&path-prefix=pt-br" height="130px"
-                        width="150px">
+                    <img src="https://i.pinimg.com/originals/06/64/9e/06649e538b2cb5c660a8e0fbc7cedfac.png"
+                        height="130px" width="180px">
                 </div>
                 <div class="bottomCard">
                     <p class="text_bottom-5">Dicas importantes para fazer uma história incrível!</p>
