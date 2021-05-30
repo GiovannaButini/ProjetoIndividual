@@ -130,7 +130,7 @@
         font-size: 20px;
         position: fixed;
         font-family: 'Raleway', sans-serif;
-        margin-left: 110px;
+        margin-left: 120px;
         top: 320px;
     }
 
@@ -292,6 +292,14 @@
         transform: rotate(90deg);
         position: relative;
         opacity: 10%; 
+    }
+    
+    .msg_erro {
+        top: 330px;
+        font-weight: bolder;
+        position: relative;
+        background-color: sandybrown; 
+        color: black; 
     }
     
     

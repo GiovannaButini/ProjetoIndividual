@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
     <title>Perfil</title>
     <link rel="stylesheet" href="./css/stylePerfil.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
+    <script src="funcaoPerfil.js"></script>
 
     <!--MENU-->
     <div id="divPaiMenu">
@@ -23,7 +26,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
-                    <li><a href="perfil.html"><i class="far fa-chart-bar"></i> MÉTRICAS</a></li>
+                    <li><a href="metrica.html"><i class="far fa-chart-bar"></i> MÉTRICAS</a></li>
                     <li><a href="sobre.html"><i class="fas fa-address-card"></i> SOBRE</a></li>
                     <li><a href="contato.html"><i class="fas fa-address-book"></i> FALE CONOSCO</a></li>
                     <li><a href="#" class="highlight" onclick="logoff()"><i class="fas fa-sign-in-alt"></i> LOGOUT</a></li>
@@ -43,10 +46,9 @@
         <img src="https://i.pinimg.com/originals/71/da/80/71da809d829db81469e35f234b03d70e.gif" alt="" class="gif">
     </figure>
 
-    <h1 class="nomeUsuario">Olá, <b id="b_usuario"></b></h3>
-    </h1>
+    <h1 class="nomeUsuario">Olá, <b  style="color: rgb(241, 112, 7);" id="b_usuario"></b></h1>
 
-    <div class="content"><a href="cores.html">
+    <div class="content" onclick="clicarCores()"><a href="cores.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title">Cores</h2>
@@ -62,7 +64,7 @@
             </div>
         </a></div>
 
-    <div class="content-2"><a href="tracos.html">
+    <div class="content-2" onclick="clicarTracos()"><a href="tracos.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title-2">Traços</h2>
@@ -79,7 +81,7 @@
             </div>
         </a></div>
 
-    <div class="content-3"><a href="pintura.html">
+    <div class="content-3" onclick="clicarPintura()"><a href="pintura.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title-3">Pintura</h2>
@@ -95,7 +97,7 @@
             </div>
         </a></div>
 
-    <div class="content-4"><a href="caricatura.html">
+    <div class="content-4" onclick="clicarCaricatura()"><a href="caricatura.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title-4">Caricatura</h2>
@@ -112,7 +114,7 @@
         </a></div>
 
 
-    <div class="content-5"><a href="quadrinhos.html">
+    <div class="content-5" onclick="clicarQuadrinhos()"><a href="quadrinhos.html">
             <div class="card">
                 <div class="topCard">
                     <h2 class="title-5">Quadrinhos</h2>
@@ -130,3 +132,9 @@
 </body>
 
 </html>
+
+<script>
+
+verificar_autenticacao();
+
+</script>

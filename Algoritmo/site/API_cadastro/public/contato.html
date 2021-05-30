@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/styleContato.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -73,9 +74,11 @@
     </div>
 
     <div class="inputs">
-        <span class="nome">Nome:</span><input class="nomeUsuario">
-        <span class="mensagem">Mensagem:</span><textarea style= "resize:none" class ="mensagemUsuario" cols="50" rows="7" maxlength="142"></textarea>
-        <button onclick="enviar()"><b>Enviar</b></button>
+        <span class="nome">Nome:</span>
+        <input name="nome" class="nomeUsuario" type="text">
+        <span class="mensagem">Mensagem:</span>
+        <textarea style= "resize:none" class ="mensagemUsuario" cols="50" rows="7" maxlength="142"></textarea>
+        <button type="submit"><b>Enviar</b></button>
     </div>
 
 </body>

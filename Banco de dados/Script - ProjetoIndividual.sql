@@ -1,15 +1,14 @@
 -- Criando e selecionando o banco de dados
-create database projetoIndividual;
-use projetoIndividual;
+create database projetoIndividual_Artes;
+use projetoIndividual_Artes;
 
 -- Criando a tabela 'usuario'
 create table usuario (
 idUsuario int primary key auto_increment, 
-nomeUsuario varchar(45), 
-ddd char(2), 
-celular char(9),
-email varchar(45), 
-senha varchar(45)
+nome varchar(45),  
+login varchar(45), 
+senha varchar(45),
+telefone char(11)
 );
 
 -- Criando a tabela 'conteudo'
@@ -21,10 +20,9 @@ tecnica varchar(30)
 
 -- Criando a tabela 'suporte'
 create table suporte(
-idSuporte int primary key auto_increment, 
-nomeUsuario varchar(45), 
+idSuporte int primary key auto_increment,  
 assunto varchar(30), 
-resposta char(3) check (resposta = 'Sim' or resposta = 'Não'),
+dataEnvio date,
 fkUsuario int, 
 foreign key (fkUsuario) references usuario (idUsuario)
 ) auto_increment = 100;
@@ -36,7 +34,8 @@ foreign key (fkUsuario) references usuario (idUsuario),
 fkConteudo int, 
 foreign key (fkConteudo) references conteudo (idConteudo), 
 primary key (fkUsuario, fkConteudo), 
-qntdAcesso char(6)
+qntdAcesso char(6), 
+dataAcesso date
 );
 
 -- Inserindo os dados da entidade 'usuario'
@@ -59,17 +58,17 @@ insert into conteudo values (1, 'Desenho básico', 'Linha, ponto e traço'),
                             (10, 'Artes Kids', 'Técnicas úmidas');
                             
 -- Inserindo dados na entidade 'Suporte'
-insert into suporte values(null, 'Fernando Monteiro', 'Dificuldade de acesso', 'Sim', 3), 
-						  (null, 'Viviane Silva', 'Dados mais precisos', 'Sim', 2);
+insert into suporte values(null, 'Fernando Monteiro', 'Dificuldade de acesso', 'Sim', '2021-03-19', 3), 
+						  (null, 'Viviane Silva', 'Dados mais precisos', 'Sim', '2020-11-07', 2);
                           
 -- Inserindo dados na entidade associativa 'conteudoUsuario'
-insert into conteudoUsuario values(1, 1, '3'), 
-								  (1, 2, '1'), 
-                                  (2, 2, '2'), 
-                                  (3, 8, '10'), 
-                                  (3, 6, '1'), 
-                                  (4, 10, '30'), 
-                                  (5, 5, '3');
+insert into conteudoUsuario values(1, 1, '3', '2019-03-13'), 
+								  (1, 2, '1', '2019-02-02'), 
+                                  (2, 2, '2', '2020-09-18'), 
+                                  (3, 8, '10', '2020-09-09'), 
+                                  (3, 6, '1', '2021-12-01'), 
+                                  (4, 10, '30', '2021-01-31'), 
+                                  (5, 5, '3', '2021-05-31');
 
 -- Selecionando as entidades separadamente
 select * from usuario;
@@ -86,8 +85,7 @@ select * from conteudo left join conteudoUsuario on fkConteudo = idConteudo inne
 
 
 
-
-
+drop database projetoIndividual_artes;
 
 
 

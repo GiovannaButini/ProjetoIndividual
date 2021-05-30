@@ -79,10 +79,10 @@ label{
 
 .nomeUsuario{
     font-family: 'Raleway', sans-serif;
-    margin-top: 20px;
+    margin-top: 0px;
     position: relative;
     color: white;
-    margin-left: 500px;
+    margin-left: 450px;
 }
 
 
@@ -434,5 +434,10 @@ label{
 
 .conteudos_novos{
     font-family:  'Raleway', sans-serif;
+}
+
+h2{
+    cursor: pointer;
+    font-family: 'Raleway';
 }
 
