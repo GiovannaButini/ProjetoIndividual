@@ -1,0 +1,13 @@
+.titleQuadrinhos{
+    background-color:  rgba(0, 183, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    top: 10px;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    width: 500px;
+    left: 420px;
+
+}

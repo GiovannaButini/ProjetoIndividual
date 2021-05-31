@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="./css/stylePerfil.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
+    <script src="funcaoPerfil.js"></script>
+
+    <!--MENU-->
+    <div id="divPaiMenu">
+        <div id="divFilhoMenu">
+            <input type="checkbox" id="chk">
+            <label for="chk">
+                <!--for ligará o label com o input, assim, quando clicar na imagem, acionará o checkbox-->
+                <img src="https://www.indiawoodcrafts.com/img/menuIcon.png" alt="">
+            </label>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="metrica.html"><i class="far fa-chart-bar"></i> MÉTRICAS</a></li>
+                    <li><a href="sobre.html"><i class="fas fa-address-card"></i> SOBRE</a></li>
+                    <li><a href="contato.html"><i class="fas fa-address-book"></i> FALE CONOSCO</a></li>
+                    <li><a href="#" class="highlight" onclick="logoff()"><i class="fas fa-sign-in-alt"></i> LOGOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</head>
+
+</head>
+
+<body>
+
+    <figure class="gif">
+        <!--IMAGEM DE FUNDO-->
+        <img src="https://i.pinimg.com/originals/71/da/80/71da809d829db81469e35f234b03d70e.gif" alt="" class="gif">
+    </figure>
+
+    <h1 class="nomeUsuario">Olá, <b  style="color: rgb(241, 112, 7);" id="b_usuario"></b></h1>
+
+    <div class="content" onclick="clicarCores()"><a href="cores.html">
+            <div class="card">
+                <div class="topCard">
+                    <h2 class="title">Cores</h2>
+                    <span class="text_top">Princípios das pinturas</span>
+                </div>
+                <div class="mediaCard">
+                    <img src="https://extranet.rolanddg.com.br/application/perfil-de-cor/perfildecor.png" height="150px"
+                        width="150px">
+                </div>
+                <div class="bottomCard">
+                    <p class="text_bottom">Dicas importantes para pinturas e aprendizado sobre coloração</p>
+                </div>
+            </div>
+        </a></div>
+
+    <div class="content-2" onclick="clicarTracos()"><a href="tracos.html">
+            <div class="card">
+                <div class="topCard">
+                    <h2 class="title-2">Traços</h2>
+                    <span class="text_top-2">Princípios de traços</span>
+                </div>
+                <div class="mediaCard">
+                    <br>
+                    <img src="https://ingleseportugues.com.br/wp-content/uploads/2018/05/pen-27043_640.png"
+                        height="130px" width="150px">
+                </div>
+                <div class="bottomCard">
+                    <p class="text_bottom">Dicas importantes para traços atraentes e precisos</p>
+                </div>
+            </div>
+        </a></div>
+
+    <div class="content-3" onclick="clicarPintura()"><a href="pintura.html">
+            <div class="card">
+                <div class="topCard">
+                    <h2 class="title-3">Pintura</h2>
+                    <span class="text_top">Princípios de pinturas</span>
+                </div>
+                <div class="mediaCard-3">
+                    <img src="https://i.pinimg.com/originals/a5/04/f4/a504f4ed3f735c48eada06de0583074b.png"
+                        height="130px" width="150px">
+                </div>
+                <div class="bottomCard">
+                    <p class="text_bottom-3">Dicas importantes para pintar de forma mais harmônica</p>
+                </div>
+            </div>
+        </a></div>
+
+    <div class="content-4" onclick="clicarCaricatura()"><a href="caricatura.html">
+            <div class="card">
+                <div class="topCard">
+                    <h2 class="title-4">Caricatura</h2>
+                    <span class="text_top">Princípios de caricaturas</span>
+                </div>
+                <div class="mediaCard-4">
+                    <img src="https://i.pinimg.com/originals/50/d7/cf/50d7cf16ecd8209fe913d3cbf874a510.png"
+                        height="130px" width="150px">
+                </div>
+                <div class="bottomCard">
+                    <p class="text_bottom-4">Dicas importantes para fazer um bom estilo caricaturístico</p>
+                </div>
+            </div>
+        </a></div>
+
+
+    <div class="content-5" onclick="clicarQuadrinhos()"><a href="quadrinhos.html">
+            <div class="card">
+                <div class="topCard">
+                    <h2 class="title-5">Quadrinhos</h2>
+                    <span class="text_top">Princípios de quadrinhos</span>
+                </div>
+                <div class="mediaCard-5">
+                    <img src="https://i.pinimg.com/originals/06/64/9e/06649e538b2cb5c660a8e0fbc7cedfac.png"
+                        height="130px" width="180px">
+                </div>
+                <div class="bottomCard">
+                    <p class="text_bottom-5">Dicas importantes para fazer uma história incrível!</p>
+                </div>
+            </div>
+        </a></div>
+</body>
+
+</html>
+
+<script>
+
+verificar_autenticacao();
+
+</script>

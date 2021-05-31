@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+        max-width: 100%;
+        max-height: 100%;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        display: block; /*Ocupa 100% do pai*/
+        padding: 20px 20px 30px 30px; /*em cima, embaixo, esquerda, direita*/
+        font-family: 'Raleway', sans-serif;
+    
+    }
+    
+    ul{
+        list-style: none;
+        top: 50px;
+        position: absolute;
+        width: 100%;
+    }
+    
+    label img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    input[type="checkbox"]{
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked ~ nav{  /*toda vez que o input for acionado, vai fazer um evento no elemento nav
+        ou seja, irá reaparecer*/
+        transform: translateX(200px); /*mexer na horizontal*/
+    }
+    
+    nav{
+        background-color: rgba(77, 76, 76, 0.904);
+        width: 177px;
+        height: 64.7%;
+        left: -200px; /*esconde o menu*/
+        position:absolute; /*pai do ul*/
+        transition: all .5s; /*transição em tudo*/
+        z-index: 1;
+    }
+    
+    nav ul li a:hover{
+        background-color: rgb(176, 224, 230);
+        color: black;
+        
+    }
+    
+    label{
+        position: absolute;
+        z-index: 9999; /*sobrepos o menu*/
+        cursor: pointer;
+        margin-left: 7px;
+    }
+    
+    .fas{
+        margin-left: -15px;
+        color: black;
+    }
+
+    .loginUsuario{
+        background-color: rgba(236, 236, 234, 0.116);
+        border-radius: 15px;
+        margin-left: 350px;
+        margin-bottom: 20px;
+        margin-top: 80px;
+        height: 500px;
+        width: 600px;
+        padding: 10px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.801);   
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .loginUsuario input{
+           background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 300px;
+        height: 30px;
+        border: none;
+        color: black;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        padding: 7px;
+        position: absolute;
+        margin-left: -250px;
+        top: 140px;
+
+    }
+
+    #in_emailUsuario{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 300px;
+        height: 30px;
+        border: none;
+        color: black;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        padding: 7px;
+        position: absolute;
+        margin-left: -160px;
+        top: 140px;
+    }
+
+    .emailUsuario{
+        color: white;
+        font-size: 20px;
+        position: fixed;
+        font-family: 'Raleway', sans-serif;
+        margin-left: -35px;
+        top: 180px;
+    }
+    
+        .senhaUsuario{
+        color: white;
+        font-size: 20px;
+        position: fixed;
+        font-family: 'Raleway', sans-serif;
+        margin-left: 120px;
+        top: 320px;
+    }
+
+    #in_senhaUsuario{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 300px;
+        height: 30px;
+        border: none;
+        color: black;
+        padding: 7px;
+        top: 250px;
+        margin-left: 0px;
+        position: relative;
+    }
+
+    #in_emailUsuario{
+        font-weight: bolder;
+    }
+
+    #button{
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        color: black;
+        background-color: rgba(250, 250, 31, 0.541);
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        top: 360px;
+        margin-left: -55px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .loginUsuario button a{
+        font-family: 'Raleway', sans-serif;
+        margin-top: -8px;
+        margin-left: -10px;
+        font-size: 15px;
+    }
+
+    .mensagemCadastro{
+        position: relative;
+        top: 350px;
+        margin-left: -180px;
+    }
+
+    .mensagemCadastro a{
+        position: relative;
+        top: -43px;
+        margin-left: 170px;
+        text-decoration: 1px underline;
+        color: rgb(96, 96, 243);
+    }
+
+    .imagensMaos{
+        position: relative;
+    }
+    
+    .conteudoImagens{
+        position: absolute;
+    }
+
+    .redHand{
+        width: 200px;
+        height: 200px;
+        margin-top: 400px;
+        margin-left: 850px;
+        transform: rotate(30deg);
+        position: relative;
+        opacity: 10%;
+    }
+    
+    .blueHand{
+        width: 250px;
+        height: 200px;
+        top: -400px;
+        margin-left: -800px;
+        position: relative;
+        opacity: 7%; 
+    }
+
+    .yellowHand{
+        width: 250px;
+        height: 200px;
+        top: 0px;
+        margin-left: -240px;
+        transform: rotate(-40deg);
+        position: relative;
+        opacity: 3%; 
+    }
+
+    .greenHand{
+        width: 200px;
+        height: 200px;
+        top: -370px;
+        transform: rotate(40deg);
+        margin-left: 340px;
+        position: relative;
+        opacity: 10%; 
+    }
+
+    .orangeHand{
+        width: 200px;
+        height: 200px;
+        top: -470px;
+        transform: rotate(-50deg);
+        margin-left: 300px;
+        position: relative;
+        opacity: 10%; 
+    }
+
+    .pinkHand{
+        width: 200px;
+        height: 200px;
+        top: -400px;
+        transform: rotate(-20deg);
+        margin-left: 290px;
+        position: relative;
+        opacity: 10%; 
+    }
+
+    .purpleHand{
+        width: 200px;
+        height: 200px;
+        top: -660px;
+        transform: rotate(-80deg);
+        margin-left: 250px;
+        position: relative;
+        opacity: 7%; 
+    }
+
+    .handColorida{
+        width: 300px;
+        height: 300px;
+        top: -850px;
+        margin-left: 170px;
+        position: relative;
+        opacity: 7%; 
+    }
+
+    
+    .handColorida2{
+        width: 250px;
+        height: 250px;
+        top: -870px;
+        margin-left: -445px;
+        transform: rotate(-180deg);
+        position: relative;
+        opacity: 7%; 
+    }
+    
+    .handColorida3{
+        width: 300px;
+        height: 300px;
+        top: -550px;
+        margin-left: 0px;
+        transform: rotate(90deg);
+        position: relative;
+        opacity: 10%; 
+    }
+    
+    .msg_erro {
+        top: 330px;
+        font-weight: bolder;
+        position: relative;
+        background-color: sandybrown; 
+        color: black; 
+    }
+    
+    
+    
+
